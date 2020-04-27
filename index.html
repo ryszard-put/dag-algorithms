@@ -8,14 +8,130 @@
   </head>
   <body>
     <div class="container">
+      <div>
+        <div id="adjacency_matrix_input" contenteditable="true"></div>
+        <button id="matrix_dag_btn">
+          Przetwórz macierz
+        </button>
+      </div>
       <div class="controll_panel">
+        <h2>Panel sterowania</h2>
         <button id="random_dag_btn">
           Utwórz DAG
         </button>
+        <button id="log_dag_btn">
+          Wyświetl graf
+        </button>
+        <button id="clear_dag_btn">
+          Wyczyść graf
+        </button>
+        <h2>Test algorytmów</h2>
+        <div class="alg_container">
+          <h3>Macierz sąsiedztwa</h3>
+          <button
+            id="am_dfs_btn"
+            class="alg_btn"
+            data-struct="AM"
+            data-alg="DFS"
+          >
+            DFS
+          </button>
+          <button
+            id="am_bfs_btn"
+            class="alg_btn"
+            data-struct="AM"
+            data-alg="BFS"
+          >
+            BFS
+          </button>
+          <button
+            id="am_sort1_btn"
+            class="alg_btn"
+            data-struct="AM"
+            data-alg="sort1"
+          >
+            sort1
+          </button>
+          <button
+            id="am_sort2_btn"
+            class="alg_btn"
+            data-struct="AM"
+            data-alg="sort2"
+          >
+            sort2
+          </button>
+        </div>
+        <div class="alg_container">
+          <h3>Lista następników</h3>
+          <button
+            id="sl_dfs_btn"
+            class="alg_btn"
+            data-struct="SL"
+            data-alg="DFS"
+          >
+            DFS
+          </button>
+          <button
+            id="sl_bfs_btn"
+            class="alg_btn"
+            data-struct="SL"
+            data-alg="BFS"
+          >
+            BFS
+          </button>
+          <button
+            id="sl_sort1_btn"
+            class="alg_btn"
+            data-struct="SL"
+            data-alg="sort1"
+          >
+            sort1
+          </button>
+          <button
+            id="sl_sort2_btn"
+            class="alg_btn"
+            data-struct="SL"
+            data-alg="sort2"
+          >
+            sort2
+          </button>
+        </div>
+        <div class="alg_container">
+          <h3>Lista krawędzi</h3>
+          <button
+            id="el_dfs_btn"
+            class="alg_btn"
+            data-struct="EL"
+            data-alg="DFS"
+          >
+            DFS
+          </button>
+          <button
+            id="el_bfs_btn"
+            class="alg_btn"
+            data-struct="EL"
+            data-alg="BFS"
+          >
+            BFS
+          </button>
+          <button
+            id="el_sort1_btn"
+            class="alg_btn"
+            data-struct="EL"
+            data-alg="sort1"
+          >
+            sort1
+          </button>
+          <button
+            id="el_sort2_btn"
+            class="alg_btn"
+            data-struct="EL"
+            data-alg="sort2"
+          >
+            sort2
+          </button>
+        </div>
       </div>
-      <div class="adjacency_matrix" contenteditable="true"></div>
-      <div class="edge_list"></div>
-      <div class="adjacency_list"></div>
     </div>
     <script src="js/DAG.js"></script>
     <script src="js/Controller.js"></script>

@@ -9,5 +9,5 @@ const test_matrix = [
   [0, 0, 0, 0, 0, 1, 0, 0],
 ];
 
-const graph = new DAG(test_matrix);
+const graph = new DAG();
 const appController = new Controller(graph);
